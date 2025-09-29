@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Info (Working Separate Files)</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    
+    <style>
+        input[type="text"] {
+            display: block; 
+            margin-bottom: 15px;
+            padding: 8px;
+            width: 200px;
+        }
+        
+        #output-area {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 15px;
+            white-space: pre-wrap; 
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>String Showcase: My Basic Info</h2>
+
+    <form onsubmit="return false;"> 
+        <input type="text" id="text1" placeholder="Name:" value=""><br>
+        <input type="text" id="text2" placeholder="Age:" value=""><br>
+        <input type="text" id="text3" placeholder="School:" value=""><br>
+
+        
+        <button py-click="generate_message" type="button">Generate Message</button>
+    </form>
+
+    <div id="output-area"></div>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
